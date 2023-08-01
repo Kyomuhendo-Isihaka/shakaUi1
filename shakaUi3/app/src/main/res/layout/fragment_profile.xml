@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ScrollView
+           android:id="@+id/scrollView2"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/imageView10"
+                       android:layout_width="0dp"
+                       android:layout_height="300dp"
+                       android:layout_marginBottom="32dp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:srcCompat="@drawable/top_background" />
+
+                   <ImageView
+                       android:id="@+id/imageView9"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="32dp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:srcCompat="@drawable/profile" />
+
+                   <TextView
+                       android:id="@+id/textView3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="16dp"
+                       android:text="Isihaka Kyomuhendo"
+                       android:textColor="#ffffff"
+                       android:textSize="30sp"
+                       android:textStyle="bold"
+                       app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                       app:layout_constraintStart_toStartOf="@+id/imageView9"
+                       app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                   <TextView
+                       android:id="@+id/textView5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:text="kyomuhendoisihaka1@gmail.com"
+                       android:textColor="#ffffff"
+                       android:textSize="20sp"
+                       app:layout_constraintEnd_toEndOf="@+id/textView3"
+                       app:layout_constraintStart_toStartOf="@+id/textView3"
+                       app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                   <EditText
+                       android:id="@+id/editTextText"
+                       android:layout_width="0dp"
+                       android:layout_height="50dp"
+                       android:layout_marginStart="32dp"
+                       android:layout_marginEnd="32dp"
+                       android:background="@drawable/background_edittext_white"
+                       android:drawableStart="@drawable/baseline_search_24"
+                       android:drawablePadding="16dp"
+                       android:ems="10"
+                       android:hint="Searching for..."
+                       android:inputType="text"
+                       android:padding="16dp"
+                       android:textColor="#7a7a7a"
+                       android:textColorHint="#7a7a7a"
+                       android:textStyle="italic"
+                       app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                       app:layout_constraintVertical_bias="1.0" />
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_margin="16dp"
+                       android:orientation="horizontal">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <androidx.constraintlayout.widget.ConstraintLayout
+                               android:layout_width="100dp"
+                               android:layout_height="100dp"
+                               android:layout_margin="6dp"
+                               android:background="@drawable/background_btn_2">
+
+                               <ImageView
+                                   android:id="@+id/imageView11"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   app:layout_constraintBottom_toBottomOf="parent"
+                                   app:layout_constraintEnd_toEndOf="parent"
+                                   app:layout_constraintStart_toStartOf="parent"
+                                   app:layout_constraintTop_toTopOf="parent"
+                                   app:srcCompat="@drawable/btn_1" />
+                           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                           <TextView
+                               android:id="@+id/textView2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Cart"
+                               android:textAlignment="center"
+                               android:textColor="#34346e"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <androidx.constraintlayout.widget.ConstraintLayout
+                               android:layout_width="100dp"
+                               android:layout_height="100dp"
+                               android:layout_margin="6dp"
+                               android:background="@drawable/background_btn_2">
+
+                               <ImageView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   app:layout_constraintBottom_toBottomOf="parent"
+                                   app:layout_constraintEnd_toEndOf="parent"
+                                   app:layout_constraintStart_toStartOf="parent"
+                                   app:layout_constraintTop_toTopOf="parent"
+                                   app:srcCompat="@drawable/btn_2" />
+                           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Maps"
+                               android:textAlignment="center"
+                               android:textColor="#34346e"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <androidx.constraintlayout.widget.ConstraintLayout
+                               android:layout_width="100dp"
+                               android:layout_height="100dp"
+                               android:layout_margin="6dp"
+                               android:background="@drawable/background_btn_2">
+
+                               <ImageView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   app:layout_constraintBottom_toBottomOf="parent"
+                                   app:layout_constraintEnd_toEndOf="parent"
+                                   app:layout_constraintStart_toStartOf="parent"
+                                   app:layout_constraintTop_toTopOf="parent"
+                                   app:srcCompat="@drawable/btn_3" />
+                           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Inbox"
+                               android:textAlignment="center"
+                               android:textColor="#34346e"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_margin="16dp"
+                       android:orientation="horizontal">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <androidx.constraintlayout.widget.ConstraintLayout
+                               android:layout_width="100dp"
+                               android:layout_height="100dp"
+                               android:layout_margin="6dp"
+                               android:background="@drawable/background_btn_2">
+
+                               <ImageView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   app:layout_constraintBottom_toBottomOf="parent"
+                                   app:layout_constraintEnd_toEndOf="parent"
+                                   app:layout_constraintStart_toStartOf="parent"
+                                   app:layout_constraintTop_toTopOf="parent"
+                                   app:srcCompat="@drawable/btn_4" />
+                           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Settings"
+                               android:textAlignment="center"
+                               android:textColor="#34346e"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <androidx.constraintlayout.widget.ConstraintLayout
+                               android:layout_width="100dp"
+                               android:layout_height="100dp"
+                               android:layout_margin="6dp"
+                               android:background="@drawable/background_btn_2">
+
+                               <ImageView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   app:layout_constraintBottom_toBottomOf="parent"
+                                   app:layout_constraintEnd_toEndOf="parent"
+                                   app:layout_constraintStart_toStartOf="parent"
+                                   app:layout_constraintTop_toTopOf="parent"
+                                   app:srcCompat="@drawable/btn_5" />
+                           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Favourates"
+                               android:textAlignment="center"
+                               android:textColor="#34346e"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical">
+
+                           <androidx.constraintlayout.widget.ConstraintLayout
+                               android:layout_width="100dp"
+                               android:layout_height="100dp"
+                               android:layout_margin="6dp"
+                               android:background="@drawable/background_btn_2">
+
+                               <ImageView
+
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   app:layout_constraintBottom_toBottomOf="parent"
+                                   app:layout_constraintEnd_toEndOf="parent"
+                                   app:layout_constraintStart_toStartOf="parent"
+                                   app:layout_constraintTop_toTopOf="parent"
+                                   app:srcCompat="@drawable/btn_6" />
+                           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Log Out"
+                               android:textAlignment="center"
+                               android:textColor="#34346e"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+                   </LinearLayout>
+               </LinearLayout>
+           </LinearLayout>
+       </ScrollView>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
