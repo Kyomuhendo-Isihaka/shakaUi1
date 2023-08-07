@@ -18,12 +18,16 @@ public class MyDbHelper extends SQLiteOpenHelper {
     private static  final String DATABASE_NAME = "shaka.db";
     private static final int DATABASE_VERSION = 2;
 
+
     private static final String TABLE_NAME = "shaka_store";
     private static final String COL_ID ="id";
     private static final String COL_NAME = "username";
 
     private static final String COL_EMAIL = "userEmail";
      private static final String COL_PASSWORD = "userPassword";
+
+
+
 
     public MyDbHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION );
@@ -32,12 +36,7 @@ public class MyDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String query = "CREATE TABLE " + TABLE_NAME +
-                "(" + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                COL_NAME + " TEXT," +
-                COL_EMAIL + " TEXT," +
-                COL_PASSWORD + " TEXT);";
-        db.execSQL(query);
+        db.execSQL("CREATE TABLE " + TABLE_NAME + "(" + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL_NAME + " TEXT," + COL_EMAIL + " TEXT," + COL_PASSWORD + " TEXT);");
 
     }
 
@@ -63,7 +62,7 @@ public class MyDbHelper extends SQLiteOpenHelper {
         }
     }
 
-    Cursor readAllData(){
+    public Cursor readAllData(){
         String query = "SELECT * FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
 

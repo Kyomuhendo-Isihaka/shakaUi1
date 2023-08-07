@@ -19,11 +19,12 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/downArrow"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_arrow_downward_24"
         app:maxImageSize="40dp"
-        android:layout_marginBottom="-50dp"
+        android:layout_marginBottom="-65dp"
         android:backgroundTint="@color/app_color"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavView"
         app:layout_constraintEnd_toEndOf="parent"

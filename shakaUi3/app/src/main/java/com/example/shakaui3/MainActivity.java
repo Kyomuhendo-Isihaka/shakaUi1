@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.service.controls.actions.FloatAction;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ import com.example.shakaui3.fragments.MessageFragment;
 import com.example.shakaui3.fragments.ProfileFragment;
 import com.example.shakaui3.fragments.SettingsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     MyDbHelper myDbHelper;
     ArrayList<String>user_id, username, userEmail, userPassword;
     BottomNavigationView bottomBar;
+    FloatingActionButton downArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         });
+
+        downArrow = findViewById(R.id.downArrow);
+        downArrow.setOnClickListener(view -> loadFragment(new HomeFragment()));
+
+
     }
 
     public void getData(){
